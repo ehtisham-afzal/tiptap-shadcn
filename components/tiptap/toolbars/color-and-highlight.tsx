@@ -70,12 +70,12 @@ const ColorHighlightButton = ({
 }: ColorHighlightButtonProps) => (
 	<button
 		onClick={onClick}
-		className="flex w-full items-center justify-between rounded-sm px-2 py-1 text-sm hover:bg-gray-3"
+		className="flex w-full items-center justify-between rounded-xs px-2 py-1 text-sm hover:bg-gray-3"
 		type="button"
 	>
 		<div className="flex items-center space-x-2">
 			<div
-				className="rounded-sm border px-1 py-px font-medium"
+				className="rounded-xs border px-1 py-px font-medium"
 				style={isHighlight ? { backgroundColor: color } : { color }}
 			>
 				A
@@ -124,7 +124,7 @@ export const ColorHighlightToolbar = () => {
 							active={currentColor === color}
 						>
 							<div className="flex items-center gap-2">
-								<div className="rounded-sm border px-2" style={{ color }}>
+								<div className="rounded-xs border px-2" style={{ color }}>
 									A
 								</div>
 								<span>{name}</span>
@@ -142,7 +142,7 @@ export const ColorHighlightToolbar = () => {
 						>
 							<div className="flex items-center gap-2">
 								<div
-									className="rounded-sm border px-2"
+									className="rounded-xs border px-2"
 									style={{ backgroundColor: color }}
 								>
 									A

@@ -165,7 +165,7 @@ function ImagePlaceholderComponent(props: NodeViewProps) {
 							error && "border-destructive bg-destructive/5"
 						)}
 					>
-						<div className="rounded-full bg-background p-4 shadow-sm transition-colors group-hover:bg-accent">
+						<div className="rounded-full bg-background p-4 shadow-xs transition-colors group-hover:bg-accent">
 							<Image className="h-6 w-6" />
 						</div>
 						<div className="text-center">
@@ -176,7 +176,7 @@ function ImagePlaceholderComponent(props: NodeViewProps) {
 						</div>
 					</div>
 				) : (
-					<div className="rounded-lg border bg-card p-4 shadow-sm">
+					<div className="rounded-lg border bg-card p-4 shadow-xs">
 						<div className="mb-4 flex items-center justify-between">
 							<h3 className="text-lg font-semibold">Add Image</h3>
 							<Button

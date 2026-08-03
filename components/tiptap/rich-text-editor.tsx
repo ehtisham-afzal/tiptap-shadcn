@@ -79,7 +79,7 @@ export function RichTextEditorDemo({ className }: { className?: string }) {
     content,
     editorProps: {
       attributes: {
-        class: "max-w-full focus:outline-none",
+        class: "max-w-full focus:outline-hidden",
       },
     },
     onUpdate: ({ editor }) => {

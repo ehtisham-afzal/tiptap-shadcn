@@ -143,16 +143,16 @@ function BlockViewerToolbar() {
         onValueChange={(value) => setView(value as "preview" | "code")}
         className="hidden lg:flex"
       >
-        <TabsList className="h-7 items-center rounded-md p-0 px-[calc(theme(spacing.1)_-_2px)] py-[theme(spacing.1)]">
+        <TabsList className="h-7 items-center rounded-md p-0 px-[calc(0.25rem-2px)] py-1">
           <TabsTrigger
             value="preview"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
+            className="h-[1.45rem] rounded-xs px-2 text-xs"
           >
             Preview
           </TabsTrigger>
           <TabsTrigger
             value="code"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
+            className="h-[1.45rem] rounded-xs px-2 text-xs"
           >
             Code
           </TabsTrigger>
@@ -173,21 +173,21 @@ function BlockViewerToolbar() {
           >
             <ToggleGroupItem
               value="100"
-              className="h-[22px] w-[22px] min-w-0 rounded-sm p-0"
+              className="h-[22px] w-[22px] min-w-0 rounded-xs p-0"
               title="Desktop"
             >
               <Monitor className="h-3.5 w-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="60"
-              className="h-[22px] w-[22px] min-w-0 rounded-sm p-0"
+              className="h-[22px] w-[22px] min-w-0 rounded-xs p-0"
               title="Tablet"
             >
               <Tablet className="h-3.5 w-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="30"
-              className="h-[22px] w-[22px] min-w-0 rounded-sm p-0"
+              className="h-[22px] w-[22px] min-w-0 rounded-xs p-0"
               title="Mobile"
             >
               <Smartphone className="h-3.5 w-3.5" />
@@ -196,7 +196,7 @@ function BlockViewerToolbar() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-[22px] w-[22px] rounded-sm p-0"
+              className="h-[22px] w-[22px] rounded-xs p-0"
               asChild
               title="Open in New Tab"
             >
@@ -211,7 +211,7 @@ function BlockViewerToolbar() {
         <div className="flex h-7 items-center gap-1 rounded-md border p-[2px]">
           <Button
             variant="ghost"
-            className="hidden h-[22px] w-auto gap-1 rounded-sm px-2 md:flex lg:w-auto"
+            className="hidden h-[22px] w-auto gap-1 rounded-xs px-2 md:flex lg:w-auto"
             size="sm"
             onClick={() => {
               copy(
@@ -344,7 +344,7 @@ function Tree({
         <SidebarMenuButton
           isActive={item.path === activeFile}
           onClick={() => item.path && setActiveFile(item.path)}
-          className="whitespace-nowrap rounded-none pl-[--index] hover:bg-zinc-700 hover:text-white focus:bg-zinc-700 focus:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white"
+          className="whitespace-nowrap rounded-none pl-(--index) hover:bg-zinc-700 hover:text-white focus:bg-zinc-700 focus:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white"
           data-index={index}
           style={
             {
@@ -368,7 +368,7 @@ function Tree({
       >
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
-            className="whitespace-nowrap rounded-none pl-[--index] hover:bg-zinc-700 hover:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white data-[state=open]:hover:bg-zinc-700 data-[state=open]:hover:text-white"
+            className="whitespace-nowrap rounded-none pl-(--index) hover:bg-zinc-700 hover:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white data-[state=open]:hover:bg-zinc-700 data-[state=open]:hover:text-white"
             style={
               {
                 "--index": `${index * (index === 1 ? 1 : 1.2)}rem`,

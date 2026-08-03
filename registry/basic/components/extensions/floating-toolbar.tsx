@@ -52,7 +52,7 @@ export function FloatingToolbar({ editor }: { editor: Editor | null }) {
             return editor.isEditable && editor.isFocused;
           }}
           editor={editor}
-          className="w-full min-w-full mx-0 shadow-sm border rounded-sm bg-background"
+          className="w-full min-w-full mx-0 shadow-xs border rounded-xs bg-background"
         >
           <ToolbarProvider editor={editor}>
             <ScrollArea className="h-fit py-0.5 w-full">
